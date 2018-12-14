@@ -1,2 +1,0 @@
-# BaseAndroid
-Android Test Exercise
