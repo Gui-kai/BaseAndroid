@@ -22,7 +22,19 @@
         android:onClick="begin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="登陆"
+        android:text="GetBanner"
+        android:textSize="15sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:onClick="post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="PostUser"
         android:textSize="15sp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"

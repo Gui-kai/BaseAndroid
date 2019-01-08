@@ -19,7 +19,7 @@ public class RetrofitAvtivity extends AppCompatActivity {
 
     EditText editText1;
     EditText editText2;
-    private Banner banner;
+    private Api api;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -32,12 +32,12 @@ public class RetrofitAvtivity extends AppCompatActivity {
                 .baseUrl("http://www.wanandroid.com")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
-        banner = retrofit.create(Banner.class);
+        api = retrofit.create(Api.class);
     }
 
 
     public void begin(View view) {
-        Call<BannerBean> call = banner.getBannerInfo();
+        Call<BannerBean> call = api.getBannerInfo();
         call.enqueue(new Callback<BannerBean>() {
             @Override
             public void onResponse(Call<BannerBean> call, Response<BannerBean> response) {
@@ -52,5 +52,27 @@ public class RetrofitAvtivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    public void post(View view) {
+        String user = editText1.getText().toString();
+        String pass = editText2.getText().toString();
+        api.editUser(user,pass).enqueue(new Callback<User>() {
+            @Override
+            public void onResponse(Call<User> call, Response<User> response) {
+                int errorcode = response.body().getErrorCode();
+                if (errorcode == 0) {
+                    Toast.makeText(RetrofitAvtivity.this, "登陆成功",Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(RetrofitAvtivity.this,response.body().getErrorMsg(),Toast.LENGTH_LONG).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<User> call, Throwable t) {
+
+            }
+        });
+
     }
 }
