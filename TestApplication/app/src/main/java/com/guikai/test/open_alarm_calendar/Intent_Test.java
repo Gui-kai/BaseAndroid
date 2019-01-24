@@ -28,9 +28,9 @@ public class Intent_Test extends AppCompatActivity {
         Intent intent = new Intent();
         ComponentName componentName = null;
         if (Build.VERSION.SDK_INT >= 8) {
-            componentName = new ComponentName("com.google.android.calendar","com.android.calendar.LaunchActivity");
+            componentName = new ComponentName("com.google.android.calendar", "com.android.calendar.LaunchActivity");
         } else {
-            componentName = new ComponentName("com.android.calendar","com.android.calendar.LaunchActivity");
+            componentName = new ComponentName("com.android.calendar", "com.android.calendar.LaunchActivity");
         }
 
         intent.setComponent(componentName);

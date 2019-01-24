@@ -18,6 +18,12 @@
         </activity>
 
         <activity android:name=".open_alarm_calendar.Intent_Test">
+
+        </activity>
+
+        <activity
+            android:name=".FullActivity"
+            android:theme="@style/NoActivityFullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
