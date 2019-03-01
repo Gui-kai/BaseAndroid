@@ -1,4 +1,4 @@
-package com.guikai.test.SharedPreferences;
+package com.guikai.test.sharedpreferences;
 
 import android.content.Context;
 import android.content.SharedPreferences;

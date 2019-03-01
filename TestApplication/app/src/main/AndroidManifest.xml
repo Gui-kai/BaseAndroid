@@ -28,7 +28,8 @@
 
         </activity>
 
-        <activity android:name=".GuidePage.GuideActivity"
+        <activity android:name=".guidepage.GuideActivity"
+            android:theme="@style/NoActivityFullscreen"
             tools:ignore="InnerclassSeparator">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

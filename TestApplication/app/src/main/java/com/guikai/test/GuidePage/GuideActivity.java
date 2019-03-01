@@ -1,4 +1,4 @@
-package com.guikai.test.GuidePage;
+package com.guikai.test.guidepage;
 
 import android.content.Intent;
 import android.os.Bundle;
