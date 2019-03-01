@@ -17,19 +17,24 @@
 
         </activity>
 
-        <activity android:name=".open_alarm_calendar.Intent_Test">
+
+        <activity
+            android:name=".utils.FullActivity"
+            android:theme="@style/NoActivityFullscreen">
 
         </activity>
 
-        <activity
-            android:name=".FullActivity"
-            android:theme="@style/NoActivityFullscreen">
+        <activity android:name=".utils.HideActionBar">
+
+        </activity>
+
+        <activity android:name=".GuidePage.GuideActivity"
+            tools:ignore="InnerclassSeparator">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            </intent-filter></activity>
     </application>
 
 </manifest>
