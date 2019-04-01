@@ -17,11 +17,9 @@
 
         </activity>
 
-
         <activity
             android:name=".utils.FullActivity"
-            android:theme="@style/NoActivityFullscreen">
-
+            android:theme="@style/ActivityFullscreen">
         </activity>
 
         <activity android:name=".utils.HideActionBar">
@@ -30,17 +28,18 @@
 
         <activity
             android:name=".guidepage.GuideActivity"
-            android:theme="@style/NoActivityFullscreen"
-            tools:ignore="InnerclassSeparator">
+            android:theme="@style/ActivityFullscreen">
 
-        </activity>
-
-        <activity android:name=".sliding_tab_layout.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+
+        <activity android:name=".sliding_tab_layout.MainActivity">
+
         </activity>
     </application>
 

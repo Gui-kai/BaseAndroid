@@ -9,7 +9,7 @@
     </style>
 
     <!-- 全屏样式. -->
-    <style name="NoActivityFullscreen" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="ActivityFullscreen" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
         <item name="android:windowFullscreen">true</item>

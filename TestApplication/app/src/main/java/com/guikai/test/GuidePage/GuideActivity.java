@@ -17,37 +17,31 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GuideActivity extends AppCompatActivity implements View.OnClickListener {
-    private ViewPager mViewPager;
     //容器
-    private List<View> mList = new ArrayList<>();
-    private View[] mViews;
+    private final List<View> mList = new ArrayList<>();
     //小圆点
     private ImageView point1, point2, point3;
     //跳过
     private ImageView iv_back;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guide);
-        ActionBar actionBar = getSupportActionBar();
-        if (actionBar!=null) {
-            actionBar.hide();
-        }
         initView();
     }
 
     //初始化View
     private void initView() {
-        mViewPager = (ViewPager) findViewById(R.id.mViewPager);
-        iv_back = (ImageView) findViewById(R.id.iv_back);
-        iv_back.setOnClickListener(this);
-        mViews = new View[3];
-        point1 = (ImageView) findViewById(R.id.point1);
-        point2 = (ImageView) findViewById(R.id.point2);
-        point3 = (ImageView) findViewById(R.id.point3);
+        final View[] mViews = new View[3];
 
+        iv_back = findViewById(R.id.iv_back);
+        point1 = findViewById(R.id.point1);
+        point2 = findViewById(R.id.point2);
+        point3 = findViewById(R.id.point3);
+        ViewPager mViewPager = findViewById(R.id.mViewPager);
+
+        iv_back.setOnClickListener(this);
 
         //设置默认的图片
         setPointImg(true, false, false);
@@ -124,13 +118,13 @@ public class GuideActivity extends AppCompatActivity implements View.OnClickList
         @NonNull
         @Override
         public Object instantiateItem(@NonNull ViewGroup container, int position) {
-            ((ViewPager) container).addView(mList.get(position));
+            container.addView(mList.get(position));
             return mList.get(position);
         }
 
         @Override
         public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
-            ((ViewPager) container).removeView(mList.get(position));
+            container.removeView(mList.get(position));
 
         }
     }
