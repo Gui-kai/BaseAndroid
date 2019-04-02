@@ -41,6 +41,10 @@
 
         </activity>
         <activity android:name=".widgets.ViewPager">
+
+        </activity>
+
+        <activity android:name=".StyleView.LoginStyle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

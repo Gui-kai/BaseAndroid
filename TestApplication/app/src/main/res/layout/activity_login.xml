@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical"
+    android:paddingStart="21dp"
+    android:paddingEnd="21dp">
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_app_launcher" />
+
+    <EditText
+        android:id="@+id/et_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="56dp"
+        android:background="@android:color/transparent"
+        android:drawablePadding="16dp"
+        android:ellipsize="start"
+        android:hint="请输入手机号"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/black_80"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/ic_login_number_logo" />
+
+    <View
+        android:id="@+id/vLinePhone"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_verify_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_login_verify_logo"
+            android:drawablePadding="16dp"
+            android:hint="请输入验证码"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textColor="@color/black_80"
+            android:textColorHint="@color/gray_20"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_send_verify_code"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:background="@drawable/bg_button_orange_rectangle_round"
+            android:ellipsize="end"
+            android:maxWidth="120dp"
+            android:minWidth="80dp"
+            android:singleLine="true"
+            android:text="获取验证码"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vLinePwd"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_line" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/bg_button_orange_rectangle_round"
+        android:gravity="center"
+        android:text="登陆"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/protocol_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="我已阅读并同意" />
+
+        <TextView
+            android:id="@+id/protocol_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我同意该协议"
+            android:textColor="@android:color/holo_blue_light" />
+    </LinearLayout>
+</LinearLayout>
