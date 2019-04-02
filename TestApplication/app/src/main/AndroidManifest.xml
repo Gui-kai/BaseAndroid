@@ -30,16 +30,22 @@
             android:name=".guidepage.GuideActivity"
             android:theme="@style/ActivityFullscreen">
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
 
         <activity android:name=".sliding_tab_layout.MainActivity">
 
+        </activity>
+        <activity android:name=".widgets.Spinner" >
+
+        </activity>
+        <activity android:name=".widgets.ViewPager">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
