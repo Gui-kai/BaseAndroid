@@ -127,6 +127,7 @@ public class GuideActivity extends AppCompatActivity implements View.OnClickList
             container.removeView(mList.get(position));
 
         }
+
     }
 
     //设置小圆点的选中效果
