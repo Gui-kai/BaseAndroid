@@ -27,8 +27,8 @@
         android:imeOptions="actionNext"
         android:inputType="number"
         android:singleLine="true"
-        android:textColor="@android:color/black"
-        android:textColorHint="@color/black_80"
+        android:textColor="@color/black_80"
+        android:textColorHint="@color/gray_20"
         android:textSize="15sp"
         android:drawableLeft="@drawable/ic_login_number_logo" />
 
