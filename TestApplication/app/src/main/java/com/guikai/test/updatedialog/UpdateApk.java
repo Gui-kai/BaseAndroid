@@ -1,4 +1,4 @@
-package com.guikai.test.updatadiglog;
+package com.guikai.test.updatedialog;
 
 import android.Manifest;
 import android.os.Bundle;
@@ -17,7 +17,7 @@ import com.ycbjie.ycupdatelib.UpdateUtils;
 
 import java.io.File;
 
-public class UpdataApk extends AppCompatActivity {
+public class UpdateApk extends AppCompatActivity {
     //这个是你的包名
     private static final String apkName = "apk";
     private static final String firstUrl = "http://ucan.25pp.com/Wandoujia_web_seo_baidu_homepage.apk";
@@ -67,7 +67,7 @@ public class UpdataApk extends AppCompatActivity {
                 @Override
                 public void onDenied() {
                     PermissionUtils.openAppSettings();
-                    Toast.makeText(UpdataApk.this,"请允许权限",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(UpdateApk.this,"请允许权限",Toast.LENGTH_SHORT).show();
                 }
             });
             permission.request();
@@ -85,7 +85,7 @@ public class UpdataApk extends AppCompatActivity {
                  * @param apkFileName               apk下载文件路径名称
                  * @param packName                  包名
                  */
-                UpdateFragment.showFragment(UpdataApk.this,
+                UpdateFragment.showFragment(UpdateApk.this,
                         false, firstUrl, apkName, desc, BuildConfig.APPLICATION_ID);
             }
         });
@@ -94,7 +94,7 @@ public class UpdataApk extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String desc = getResources().getString(R.string.update_content_info1);
-                UpdateFragment.showFragment(UpdataApk.this,
+                UpdateFragment.showFragment(UpdateApk.this,
                         true, firstUrl, apkName, desc, BuildConfig.APPLICATION_ID);
             }
         });
@@ -103,7 +103,7 @@ public class UpdataApk extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String desc = getResources().getString(R.string.update_content_info1);
-                UpdateFragment.showFragment(UpdataApk.this,
+                UpdateFragment.showFragment(UpdateApk.this,
                         false, url, apkName, desc, BuildConfig.APPLICATION_ID);
             }
         });
@@ -112,6 +112,7 @@ public class UpdataApk extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 UpdateUtils.clearDownload();
+                Toast.makeText(UpdateApk.this,"安装包已经清空",Toast.LENGTH_SHORT).show();
             }
         });
     }

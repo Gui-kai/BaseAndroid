@@ -55,7 +55,7 @@
 
         </activity>
 
-        <activity android:name=".updatadiglog.UpdataApk">
+        <activity android:name=".updatedialog.UpdateApk">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
