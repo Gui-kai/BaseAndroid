@@ -40,4 +40,5 @@ dependencies {
 
     //updateApk
     implementation 'cn.yc:YCUpdateLib:1.0.6'
+    implementation 'org.jetbrains:annotations-java5:15.0'
 }
