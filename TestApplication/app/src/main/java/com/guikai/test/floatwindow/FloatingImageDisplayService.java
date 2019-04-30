@@ -59,7 +59,7 @@ public class FloatingImageDisplayService extends Service {
         layoutParams.x = 300;
         layoutParams.y = 300;
 
-        images = new int[] {
+        images = new int[]{
                 R.drawable.ic_vip_header_bg,
                 R.drawable.login,
                 R.drawable.back,

@@ -62,11 +62,11 @@ public class FloatWindow extends AppCompatActivity {
         if (FloatingImageDisplayService.isStarted) {
             return;
         }
-        if (!Settings.canDrawOverlays(this)){
+        if (!Settings.canDrawOverlays(this)) {
             Toast.makeText(this, "当前无权限，请授权", Toast.LENGTH_SHORT);
             startActivityForResult(new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:" + getPackageName())), 1);
         } else {
-            startService(new Intent(FloatWindow.this,FloatingImageDisplayService.class));
+            startService(new Intent(FloatWindow.this, FloatingImageDisplayService.class));
         }
     }
 
@@ -78,7 +78,7 @@ public class FloatWindow extends AppCompatActivity {
             Toast.makeText(this, "当前无权限，请授权", Toast.LENGTH_SHORT);
             startActivityForResult(new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:" + getPackageName())), 2);
         } else {
-            startService(new Intent(FloatWindow.this,FloatingVideoService.class));
+            startService(new Intent(FloatWindow.this, FloatingVideoService.class));
         }
     }
 }

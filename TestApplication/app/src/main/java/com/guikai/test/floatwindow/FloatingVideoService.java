@@ -98,8 +98,7 @@ public class FloatingVideoService extends Service {
             try {
                 mediaPlayer.setDataSource(this, Uri.parse("https://raw.githubusercontent.com/dongzhong/ImageAndVideoStore/master/Bruno%20Mars%20-%20Treasure.mp4"));
                 mediaPlayer.prepareAsync();
-            }
-            catch (IOException e) {
+            } catch (IOException e) {
                 Toast.makeText(this, "无法打开视频源", Toast.LENGTH_LONG).show();
             }
             windowManager.addView(displayView, layoutParams);
