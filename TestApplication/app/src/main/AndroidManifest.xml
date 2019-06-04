@@ -35,11 +35,10 @@
             android:name=".guidepage.GuideActivity"
             android:theme="@style/ActivityFullscreen">
 
-
-
         </activity>
 
-        <activity android:name=".sliding_tab_layout.MainActivity">
+        <activity android:name=".sliding_tab_layout.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
         </activity>
         <activity android:name=".widgets.Spinner" >
@@ -58,10 +57,6 @@
         </activity>
 
         <activity android:name=".updatedialog.UpdateApk">
-
-        </activity>
-
-        <activity android:name=".floatwindow.FloatWindow">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -69,9 +64,15 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".floatwindow.FloatWindow">
+
+        </activity>
+
         <service android:name=".floatwindow.FloatingButtonService"/>
         <service android:name=".floatwindow.FloatingImageDisplayService"/>
         <service android:name=".floatwindow.FloatingVideoService"/>
+
+
     </application>
 
 

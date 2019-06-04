@@ -3,9 +3,6 @@ package com.guikai.test.floatwindow;
 import android.app.Service;
 import android.content.Intent;
 import android.graphics.PixelFormat;
-import android.media.AudioManager;
-import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Handler;
 import android.os.IBinder;
@@ -15,16 +12,11 @@ import android.support.annotation.Nullable;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
-import android.view.SurfaceHolder;
-import android.view.SurfaceView;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.guikai.test.R;
-
-import java.io.IOException;
 
 public class FloatingImageDisplayService extends Service {
 
