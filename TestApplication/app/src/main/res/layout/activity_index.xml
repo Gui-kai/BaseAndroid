@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/guide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:text="引导页"/>
+
+    <Button
+        android:id="@+id/float_widow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:text="浮动窗口"/>
+
+    <Button
+        android:id="@+id/data_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:text="数据保存-文件"/>
+
+    <Button
+        android:id="@+id/sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:text="轻量存储—SP"/>
+    <Button
+        android:id="@+id/sli_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:textAllCaps="false"
+        android:text="Sliding_TabLayout"/>
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:text="登陆界面"/>
+
+    <Button
+        android:id="@+id/update_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_marginBottom="5dp"
+        android:text="APK更新Dialog"/>
+
+        <Button
+            android:id="@+id/widget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginBottom="5dp"
+            android:text="APK更新Dialog"/>
+
+    <!--<Button-->
+        <!--android:id="@+id/dd"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:text=""/>-->
+    <!--<Button-->
+        <!--android:id="@+id/dd"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:text="登陆界面"/>-->
+    <!--<Button-->
+        <!--android:id="@+id/dd"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:text="登陆界面"/>-->
+
+    </android.support.v7.widget.LinearLayoutCompat>
+</ScrollView>

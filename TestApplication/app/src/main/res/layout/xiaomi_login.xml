@@ -42,6 +42,7 @@
                 android:background="@drawable/xiaomi_btn_broder"
                 android:text="会员积分 0.18"
                 android:textSize="14sp"
+                android:visibility="gone"
                 android:textColor="@android:color/white"
                 android:drawableLeft="@drawable/point_off" />
 
