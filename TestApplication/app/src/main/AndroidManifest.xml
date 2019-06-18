@@ -77,6 +77,12 @@
         <service android:name=".floatwindow.FloatingImageDisplayService"/>
         <service android:name=".floatwindow.FloatingVideoService"/>
 
+        <activity android:name=".index.TestActivity">
+            <intent-filter>
+                <action android:name="guikai"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
 
     </application>
 

@@ -18,6 +18,7 @@ import com.guikai.test.updatedialog.UpdateApk;
 public class IndexActivity extends AppCompatActivity implements View.OnClickListener{
 
     Intent intent;
+    Button btn_test;
     Button btn_guide;
     Button btn_float_widow;
     Button btn_data_save;
@@ -31,6 +32,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_index);
         btn_float_widow = findViewById(R.id.float_widow);
         btn_guide = findViewById(R.id.guide);
+        btn_test = findViewById(R.id.test);
         btn_data_save = findViewById(R.id.data_save);
         btn_sp = findViewById(R.id.sp);
         btn_sli_tab_layout = findViewById(R.id.sli_tab_layout);
@@ -44,6 +46,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
         btn_sli_tab_layout.setOnClickListener(this);
         btn_login.setOnClickListener(this);
         btn_update_dialog.setOnClickListener(this);
+        btn_test.setOnClickListener(this);
     }
 
     @Override
@@ -73,6 +76,11 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
                 intent= new Intent(IndexActivity.this,LoginStyle.class);
                 startActivity(intent);
                 break;
+            case R.id.test:
+                intent = new Intent("guikai");
+                startActivity(intent);
+                break;
+
         }
     }
 }
