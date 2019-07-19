@@ -76,21 +76,12 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/widget"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="APK更新Dialog"
-            android:textAllCaps="false"
-            android:textStyle="bold" />
-
-        <!--<Button-->
-        <!--android:id="@+id/dd"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:textStyle="bold"-->
-        <!--android:layout_marginBottom="5dp"-->
-        <!--android:text=""/>-->
+        android:id="@+id/vlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:text="vlayout"/>
         <!--<Button-->
         <!--android:id="@+id/dd"-->
         <!--android:layout_width="match_parent"-->

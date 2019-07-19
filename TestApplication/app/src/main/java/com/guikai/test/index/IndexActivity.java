@@ -14,6 +14,7 @@ import com.guikai.test.floatwindow.FloatWindow;
 import com.guikai.test.guidepage.GuideActivity;
 import com.guikai.test.sliding_tab_layout.MainActivity;
 import com.guikai.test.updatedialog.UpdateApk;
+import com.guikai.test.vlayout.VLayoutActivity;
 
 public class IndexActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -26,6 +27,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
     Button btn_sli_tab_layout;
     Button btn_login;
     Button btn_update_dialog;
+    Button btn_vlayout;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +40,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
         btn_sli_tab_layout = findViewById(R.id.sli_tab_layout);
         btn_login = findViewById(R.id.login);
         btn_update_dialog = findViewById(R.id.update_dialog);
+        btn_vlayout = findViewById(R.id.vlayout);
 
         btn_float_widow.setOnClickListener(this);
         btn_guide.setOnClickListener(this);
@@ -47,37 +50,42 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
         btn_login.setOnClickListener(this);
         btn_update_dialog.setOnClickListener(this);
         btn_test.setOnClickListener(this);
+        btn_vlayout.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.guide:
-                intent= new Intent(IndexActivity.this,GuideActivity.class);
+                intent= new Intent(this,GuideActivity.class);
                 startActivity(intent);
                 break;
             case R.id.float_widow:
-                intent= new Intent(IndexActivity.this,FloatWindow.class);
+                intent= new Intent(this,FloatWindow.class);
                 startActivity(intent);
                 break;
             case R.id.data_save:
-                intent= new Intent(IndexActivity.this,FileSave.class);
+                intent= new Intent(this,FileSave.class);
                 startActivity(intent);
                 break;
             case R.id.sli_tab_layout:
-                intent= new Intent(IndexActivity.this,MainActivity.class);
+                intent= new Intent(this,MainActivity.class);
                 startActivity(intent);
                 break;
             case R.id.update_dialog:
-                intent= new Intent(IndexActivity.this,UpdateApk.class);
+                intent= new Intent(this,UpdateApk.class);
                 startActivity(intent);
                 break;
             case R.id.login:
-                intent= new Intent(IndexActivity.this,LoginStyle.class);
+                intent= new Intent(this,LoginStyle.class);
                 startActivity(intent);
                 break;
             case R.id.test:
                 intent = new Intent("guikai");
+                startActivity(intent);
+                break;
+            case R.id.vlayout:
+                intent = new Intent(this, VLayoutActivity.class);
                 startActivity(intent);
                 break;
 
