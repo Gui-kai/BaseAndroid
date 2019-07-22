@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import com.guikai.test.R;
 import com.guikai.test.StyleView.LoginStyle;
+import com.guikai.test.broadcast.LocalActivity;
 import com.guikai.test.datasave.FileSave;
 import com.guikai.test.floatwindow.FloatWindow;
 import com.guikai.test.guidepage.GuideActivity;
@@ -28,6 +29,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
     Button btn_login;
     Button btn_update_dialog;
     Button btn_vlayout;
+    Button btn_broad;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +43,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
         btn_login = findViewById(R.id.login);
         btn_update_dialog = findViewById(R.id.update_dialog);
         btn_vlayout = findViewById(R.id.vlayout);
+        btn_broad = findViewById(R.id.broadcast);
 
         btn_float_widow.setOnClickListener(this);
         btn_guide.setOnClickListener(this);
@@ -51,6 +54,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
         btn_update_dialog.setOnClickListener(this);
         btn_test.setOnClickListener(this);
         btn_vlayout.setOnClickListener(this);
+        btn_broad.setOnClickListener(this);
     }
 
     @Override
@@ -86,6 +90,10 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.vlayout:
                 intent = new Intent(this, VLayoutActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.broadcast:
+                intent = new Intent(this, LocalActivity.class);
                 startActivity(intent);
                 break;
 
