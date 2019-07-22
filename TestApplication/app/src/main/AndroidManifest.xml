@@ -28,54 +28,38 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".helloworld.HelloWorld">
-
-        </activity>
+        <activity android:name=".helloworld.HelloWorld"/>
 
         <activity
             android:name=".utils.FullActivity"
             android:theme="@style/ActivityFullscreen">
         </activity>
 
-        <activity android:name=".utils.HideActionBar">
-
-        </activity>
+        <activity android:name=".utils.HideActionBar"/>
 
         <activity
             android:name=".guidepage.GuideActivity"
-            android:theme="@style/ActivityFullscreen">
-
-        </activity>
+            android:theme="@style/ActivityFullscreen"/>
 
         <activity android:name=".sliding_tab_layout.MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
 
-        </activity>
-        <activity android:name=".widgets.Spinner" >
+        <activity android:name=".widgets.Spinner" />
 
-        </activity>
-        <activity android:name=".widgets.ViewPager">
+        <activity android:name=".widgets.ViewPager"/>
 
-        </activity>
+        <activity android:name=".StyleView.LoginStyle"/>
 
-        <activity android:name=".StyleView.LoginStyle">
+        <activity android:name=".datasave.FileSave"/>
 
-        </activity>
+        <activity android:name=".updatedialog.UpdateApk"/>
 
-        <activity android:name=".datasave.FileSave">
-
-        </activity>
-
-        <activity android:name=".updatedialog.UpdateApk">
-
-        </activity>
-
-        <activity android:name=".floatwindow.FloatWindow">
-
-        </activity>
+        <activity android:name=".floatwindow.FloatWindow"/>
 
         <service android:name=".floatwindow.FloatingButtonService"/>
+
         <service android:name=".floatwindow.FloatingImageDisplayService"/>
+
         <service android:name=".floatwindow.FloatingVideoService"/>
 
         <activity android:name=".index.TestActivity">
@@ -85,23 +69,18 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".vlayout.VLayoutActivity">
+        <activity android:name=".vlayout.VLayoutActivity"/>
 
-        </activity>
+        <receiver android:name=".broadcast.MyBroadCastReceiver"/>
 
-        <receiver android:name=".broadcast.MyBroadCastReceiver">
+        <activity android:name=".broadcast.BroadActivity"/>
 
-        </receiver>
+        <activity android:name=".broadcast.LocalActivity"/>
 
-        <activity android:name=".broadcast.BroadActivity">
+        <activity android:name=".broadcast.outline.LoginActivity"/>
 
-        </activity>
-
-        <activity android:name=".broadcast.LocalActivity">
-
-        </activity>
+        <activity android:name=".broadcast.outline.MainActivity"/>
 
     </application>
-
 
 </manifest>
