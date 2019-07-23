@@ -14,7 +14,6 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_outline);
     }
 
-
     public void outline(View view) {
         Intent intent = new Intent("outline");
         sendBroadcast(intent);

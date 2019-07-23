@@ -8,8 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.guikai.test.R;
-import com.guikai.test.StyleView.LoginStyle;
-import com.guikai.test.broadcast.LocalActivity;
+import com.guikai.test.styleview.LoginStyle;
 import com.guikai.test.broadcast.outline.LoginActivity;
 import com.guikai.test.datasave.FileSave;
 import com.guikai.test.floatwindow.FloatWindow;

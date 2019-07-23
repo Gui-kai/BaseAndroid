@@ -17,6 +17,7 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         ActivityCollecter.addActivity(this);
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction("outline");

@@ -1,4 +1,4 @@
-package com.guikai.test.StyleView;
+package com.guikai.test.styleview;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

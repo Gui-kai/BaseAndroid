@@ -21,11 +21,7 @@
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
 
         <activity android:name=".index.IndexActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <activity android:name=".helloworld.HelloWorld"/>
@@ -48,7 +44,7 @@
 
         <activity android:name=".widgets.ViewPager"/>
 
-        <activity android:name=".StyleView.LoginStyle"/>
+        <activity android:name=".styleview.LoginStyle"/>
 
         <activity android:name=".datasave.FileSave"/>
 
@@ -80,6 +76,21 @@
         <activity android:name=".broadcast.outline.LoginActivity"/>
 
         <activity android:name=".broadcast.outline.MainActivity"/>
+
+        <activity android:name=".mdwidget.MdActivtiy"
+            android:theme="@style/ActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".mdwidget.AppbarlayoutActivity"
+            android:theme="@style/NoStatus">
+
+        </activity>
+
 
     </application>
 
