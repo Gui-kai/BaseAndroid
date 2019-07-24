@@ -15,6 +15,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--透明状态栏-->
     <style name="NoStatus" parent="ActivityTheme">
         <item name="android:statusBarColor" tools:ignore="NewApi">@android:color/transparent</item>
     </style>
@@ -26,7 +27,6 @@
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
     </style>
-
 
     <style name="BottomDialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowTitleStyle">@null</item>

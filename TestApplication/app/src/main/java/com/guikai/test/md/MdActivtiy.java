@@ -1,4 +1,4 @@
-package com.guikai.test.mdwidget;
+package com.guikai.test.md;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

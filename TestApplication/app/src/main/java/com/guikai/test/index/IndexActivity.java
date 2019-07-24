@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.guikai.test.R;
+import com.guikai.test.md.MdActivtiy;
 import com.guikai.test.styleview.LoginStyle;
 import com.guikai.test.broadcast.outline.LoginActivity;
 import com.guikai.test.datasave.FileSave;
@@ -17,7 +18,7 @@ import com.guikai.test.sliding_tab_layout.MainActivity;
 import com.guikai.test.updatedialog.UpdateApk;
 import com.guikai.test.vlayout.VLayoutActivity;
 
-public class IndexActivity extends AppCompatActivity implements View.OnClickListener{
+public class IndexActivity extends AppCompatActivity implements View.OnClickListener {
 
     Intent intent;
     Button btn_test;
@@ -30,6 +31,8 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
     Button btn_update_dialog;
     Button btn_vlayout;
     Button btn_broad;
+    Button btn_md;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +47,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
         btn_update_dialog = findViewById(R.id.update_dialog);
         btn_vlayout = findViewById(R.id.vlayout);
         btn_broad = findViewById(R.id.broadcast);
+        btn_md = findViewById(R.id.md);
 
         btn_float_widow.setOnClickListener(this);
         btn_guide.setOnClickListener(this);
@@ -55,33 +59,34 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
         btn_test.setOnClickListener(this);
         btn_vlayout.setOnClickListener(this);
         btn_broad.setOnClickListener(this);
+        btn_md.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.guide:
-                intent= new Intent(this,GuideActivity.class);
+                intent = new Intent(this, GuideActivity.class);
                 startActivity(intent);
                 break;
             case R.id.float_widow:
-                intent= new Intent(this,FloatWindow.class);
+                intent = new Intent(this, FloatWindow.class);
                 startActivity(intent);
                 break;
             case R.id.data_save:
-                intent= new Intent(this,FileSave.class);
+                intent = new Intent(this, FileSave.class);
                 startActivity(intent);
                 break;
             case R.id.sli_tab_layout:
-                intent= new Intent(this,MainActivity.class);
+                intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
                 break;
             case R.id.update_dialog:
-                intent= new Intent(this,UpdateApk.class);
+                intent = new Intent(this, UpdateApk.class);
                 startActivity(intent);
                 break;
             case R.id.login:
-                intent= new Intent(this,LoginStyle.class);
+                intent = new Intent(this, LoginStyle.class);
                 startActivity(intent);
                 break;
             case R.id.test:
@@ -94,6 +99,10 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.broadcast:
                 intent = new Intent(this, LoginActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.md:
+                intent = new Intent(this, MdActivtiy.class);
                 startActivity(intent);
                 break;
 

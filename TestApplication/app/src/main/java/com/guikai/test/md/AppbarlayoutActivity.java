@@ -1,4 +1,4 @@
-package com.guikai.test.mdwidget;
+package com.guikai.test.md;
 
 import android.content.Intent;
 import android.os.Bundle;

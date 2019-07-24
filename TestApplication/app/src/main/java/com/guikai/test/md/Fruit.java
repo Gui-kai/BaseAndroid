@@ -1,4 +1,4 @@
-package com.guikai.test.mdwidget;
+package com.guikai.test.md;
 
 public class Fruit {
     private String name;
