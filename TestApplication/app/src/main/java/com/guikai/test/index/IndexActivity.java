@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import com.guikai.test.R;
 import com.guikai.test.md.MdActivtiy;
+import com.guikai.test.shadow.ShadowActivity;
 import com.guikai.test.styleview.LoginStyle;
 import com.guikai.test.broadcast.outline.LoginActivity;
 import com.guikai.test.datasave.FileSave;
