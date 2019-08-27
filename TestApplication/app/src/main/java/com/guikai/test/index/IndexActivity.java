@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.guikai.test.R;
 import com.guikai.test.md.MdActivtiy;
@@ -22,7 +23,7 @@ import com.guikai.test.vlayout.VLayoutActivity;
 public class IndexActivity extends AppCompatActivity implements View.OnClickListener {
 
     Intent intent;
-    Button btn_test;
+    TextView btn_test;
     Button btn_guide;
     Button btn_float_widow;
     Button btn_data_save;
