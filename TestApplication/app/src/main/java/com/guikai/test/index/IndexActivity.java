@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.guikai.test.R;
+import com.guikai.test.lottie.LottieActivty;
 import com.guikai.test.md.MdActivtiy;
 import com.guikai.test.shadow.ShadowActivity;
 import com.guikai.test.styleview.LoginStyle;
@@ -34,6 +35,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
     Button btn_vlayout;
     Button btn_broad;
     Button btn_md;
+    Button btn_lottie;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -50,6 +52,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
         btn_vlayout = findViewById(R.id.vlayout);
         btn_broad = findViewById(R.id.broadcast);
         btn_md = findViewById(R.id.md);
+        btn_lottie = findViewById(R.id.btn_lottie);
 
         btn_float_widow.setOnClickListener(this);
         btn_guide.setOnClickListener(this);
@@ -62,6 +65,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
         btn_vlayout.setOnClickListener(this);
         btn_broad.setOnClickListener(this);
         btn_md.setOnClickListener(this);
+        btn_lottie.setOnClickListener(this);
     }
 
     @Override
@@ -107,7 +111,10 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
                 intent = new Intent(this, MdActivtiy.class);
                 startActivity(intent);
                 break;
-
+            case R.id.btn_lottie:
+                intent = new Intent(this, LottieActivty.class);
+                startActivity(intent);
+                break;
         }
     }
 }

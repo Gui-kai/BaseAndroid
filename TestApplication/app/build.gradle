@@ -54,8 +54,13 @@ dependencies {
 
     //卡片
     implementation 'com.android.support:cardview-v7:28.0.0'
+    debugImplementation 'com.idescout.sql:sqlscout-server:4.1'
+    releaseImplementation 'com.idescout.sql:sqlscout-server-noop:4.1'
 
-    //阴影 内部已集成
+    //阴影 内部lib已集成
     //implementation 'com.github.lihangleo2:ShadowLayout:2.0.1'
+
+    //Lottie
+    implementation 'com.airbnb.android:lottie:1.0.1'
 
 }
