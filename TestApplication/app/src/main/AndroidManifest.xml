@@ -94,7 +94,7 @@
 
         </activity>
 
-        <activity android:name=".lottie.LottieActivty"/>
+        <activity android:name=".lottie.LottieActivity"/>
 
     </application>
 

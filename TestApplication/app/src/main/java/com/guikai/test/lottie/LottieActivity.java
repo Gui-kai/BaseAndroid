@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import com.airbnb.lottie.LottieAnimationView;
 import com.guikai.test.R;
 
-public class LottieActivty extends AppCompatActivity {
+public class LottieActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
