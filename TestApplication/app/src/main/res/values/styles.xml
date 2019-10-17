@@ -17,7 +17,7 @@
 
     <!--透明状态栏-->
     <style name="NoStatus" parent="ActivityTheme">
-        <item name="android:statusBarColor" tools:ignore="NewApi">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
     <!-- 全屏样式. -->

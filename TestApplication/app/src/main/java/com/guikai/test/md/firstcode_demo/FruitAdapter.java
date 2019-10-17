@@ -1,4 +1,4 @@
-package com.guikai.test.md;
+package com.guikai.test.md.firstcode_demo;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;

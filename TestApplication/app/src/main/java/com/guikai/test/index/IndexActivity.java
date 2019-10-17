@@ -10,7 +10,9 @@ import android.widget.TextView;
 
 import com.guikai.test.R;
 import com.guikai.test.lottie.LottieActivity;
-import com.guikai.test.md.MdActivtiy;
+import com.guikai.test.md.firstcode_demo.MdActivtiy;
+import com.guikai.test.md.tablayout.TabLayoutDemo;
+import com.guikai.test.md.tablayout.flyco.FlycoTabActivity;
 import com.guikai.test.styleview.LoginStyle;
 import com.guikai.test.broadcast.outline.LoginActivity;
 import com.guikai.test.datasave.FileSave;
@@ -111,7 +113,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(intent);
                 break;
             case R.id.btn_lottie:
-                intent = new Intent(this, LottieActivity.class);
+                intent = new Intent(this, FlycoTabActivity.class);
                 startActivity(intent);
                 break;
         }

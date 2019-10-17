@@ -80,12 +80,12 @@
 
         <activity android:name=".broadcast.outline.MainActivity"/>
 
-        <activity android:name=".md.MdActivtiy"
+        <activity android:name=".md.firstcode_demo.MdActivtiy"
             android:theme="@style/ActivityTheme">
 
         </activity>
 
-        <activity android:name=".md.AppbarlayoutActivity"
+        <activity android:name=".md.firstcode_demo.AppbarlayoutActivity"
             android:theme="@style/NoStatus">
 
         </activity>
@@ -96,6 +96,9 @@
 
         <activity android:name=".lottie.LottieActivity"/>
 
+        <activity android:name=".md.tablayout.TabLayoutDemo"/>
+
+        <activity android:name=".md.tablayout.flyco.FlycoTabActivity"/>
     </application>
 
 </manifest>
