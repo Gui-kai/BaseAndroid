@@ -21,6 +21,5 @@ public class TabLayoutDemo extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("歌单"));
         tabLayout.addTab(tabLayout.newTab().setText("主播电台"));
         tabLayout.addTab(tabLayout.newTab().setText("排行版"));
-
     }
 }

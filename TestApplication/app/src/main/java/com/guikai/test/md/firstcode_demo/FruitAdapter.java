@@ -31,7 +31,7 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder> 
             @Override
             public void onClick(View v) {
                 int position = viewHolder.getAdapterPosition();
-                Intent intent = new Intent(parent.getContext(), AppbarlayoutActivity.class);
+                Intent intent = new Intent(parent.getContext(), AppbarLayoutActivity.class);
                 intent.putExtra("name", daras.get(position).getName());
                 intent.putExtra("img", daras.get(position).getImageId());
                 parent.getContext().startActivity(intent);

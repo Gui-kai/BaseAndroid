@@ -85,7 +85,7 @@
 
         </activity>
 
-        <activity android:name=".md.firstcode_demo.AppbarlayoutActivity"
+        <activity android:name=".md.firstcode_demo.AppbarLayoutActivity"
             android:theme="@style/NoStatus">
 
         </activity>

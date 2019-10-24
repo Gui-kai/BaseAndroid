@@ -113,20 +113,15 @@
             android:layout_marginBottom="5dp"
             android:textAllCaps="false"
             android:text="Lottie"/>
-        <!--<Button-->
-        <!--android:id="@+id/dd"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:textStyle="bold"-->
-        <!--android:layout_marginBottom="5dp"-->
-        <!--android:text="登陆界面"/>-->
-        <!--<Button-->
-        <!--android:id="@+id/dd"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:textStyle="bold"-->
-        <!--android:layout_marginBottom="5dp"-->
-        <!--android:text="登陆界面"/>-->
+
+        <Button
+            android:id="@+id/btn_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:textAllCaps="false"
+            android:text="Tablayouts"/>
 
     </android.support.v7.widget.LinearLayoutCompat>
 </ScrollView>

@@ -37,6 +37,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
     Button btn_broad;
     Button btn_md;
     Button btn_lottie;
+    Button btn_tablayout;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -54,6 +55,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
         btn_broad = findViewById(R.id.broadcast);
         btn_md = findViewById(R.id.md);
         btn_lottie = findViewById(R.id.btn_lottie);
+        btn_tablayout = findViewById(R.id.btn_tablayout);
 
         btn_float_widow.setOnClickListener(this);
         btn_guide.setOnClickListener(this);
@@ -67,6 +69,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
         btn_broad.setOnClickListener(this);
         btn_md.setOnClickListener(this);
         btn_lottie.setOnClickListener(this);
+        btn_tablayout.setOnClickListener(this);
     }
 
     @Override
@@ -113,8 +116,14 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(intent);
                 break;
             case R.id.btn_lottie:
+                intent = new Intent(this, LottieActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_tablayout:
                 intent = new Intent(this, FlycoTabActivity.class);
                 startActivity(intent);
+                break;
+            default:
                 break;
         }
     }
