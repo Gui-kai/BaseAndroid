@@ -9,9 +9,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.guikai.test.R;
+import com.guikai.test.dialog.MyDialogActivity;
 import com.guikai.test.lottie.LottieActivity;
 import com.guikai.test.md.firstcode_demo.MdActivtiy;
-import com.guikai.test.md.tablayout.TabLayoutDemo;
 import com.guikai.test.md.tablayout.flyco.FlycoTabActivity;
 import com.guikai.test.styleview.LoginStyle;
 import com.guikai.test.broadcast.outline.LoginActivity;
@@ -38,6 +38,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
     Button btn_md;
     Button btn_lottie;
     Button btn_tablayout;
+    Button btn_mydialog;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -56,6 +57,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
         btn_md = findViewById(R.id.md);
         btn_lottie = findViewById(R.id.btn_lottie);
         btn_tablayout = findViewById(R.id.btn_tablayout);
+        btn_mydialog = findViewById(R.id.btn_mydialog);
 
         btn_float_widow.setOnClickListener(this);
         btn_guide.setOnClickListener(this);
@@ -70,6 +72,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
         btn_md.setOnClickListener(this);
         btn_lottie.setOnClickListener(this);
         btn_tablayout.setOnClickListener(this);
+        btn_mydialog.setOnClickListener(this);
     }
 
     @Override
@@ -121,6 +124,10 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.btn_tablayout:
                 intent = new Intent(this, FlycoTabActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_mydialog:
+                intent = new Intent(this, MyDialogActivity.class);
                 startActivity(intent);
                 break;
             default:
