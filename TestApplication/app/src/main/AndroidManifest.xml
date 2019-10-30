@@ -101,6 +101,8 @@
         <activity android:name=".md.tablayout.TabLayoutDemo"/>
 
         <activity android:name=".md.tablayout.flyco.FlycoTabActivity"/>
+
+        <activity android:name=".datasave.sqlite.DataBaseActivity"/>
     </application>
 
 </manifest>

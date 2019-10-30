@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.guikai.test.R;
+import com.guikai.test.datasave.sqlite.DataBaseActivity;
+import com.guikai.test.datasave.sqlite.MyDatabase;
 import com.guikai.test.dialog.MyDialogActivity;
 import com.guikai.test.lottie.LottieActivity;
 import com.guikai.test.md.firstcode_demo.MdActivtiy;
@@ -39,6 +41,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
     Button btn_lottie;
     Button btn_tablayout;
     Button btn_mydialog;
+    Button btn_database;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -58,6 +61,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
         btn_lottie = findViewById(R.id.btn_lottie);
         btn_tablayout = findViewById(R.id.btn_tablayout);
         btn_mydialog = findViewById(R.id.btn_mydialog);
+        btn_database = findViewById(R.id.database);
 
         btn_float_widow.setOnClickListener(this);
         btn_guide.setOnClickListener(this);
@@ -73,6 +77,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
         btn_lottie.setOnClickListener(this);
         btn_tablayout.setOnClickListener(this);
         btn_mydialog.setOnClickListener(this);
+        btn_database.setOnClickListener(this);
     }
 
     @Override
@@ -128,6 +133,10 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.btn_mydialog:
                 intent = new Intent(this, MyDialogActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.database:
+                intent = new Intent(this, DataBaseActivity.class);
                 startActivity(intent);
                 break;
             default:
