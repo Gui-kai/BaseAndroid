@@ -140,5 +140,14 @@
             android:textAllCaps="false"
             android:text="mydialog"/>
 
+        <Button
+            android:id="@+id/btn_permission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:textAllCaps="false"
+            android:text="权限验证"/>
+
     </android.support.v7.widget.LinearLayoutCompat>
 </ScrollView>

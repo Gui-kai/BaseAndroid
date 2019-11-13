@@ -15,6 +15,7 @@ import com.guikai.test.dialog.MyDialogActivity;
 import com.guikai.test.lottie.LottieActivity;
 import com.guikai.test.md.firstcode_demo.MdActivtiy;
 import com.guikai.test.md.tablayout.flyco.FlycoTabActivity;
+import com.guikai.test.permission.NewPermissionActivity;
 import com.guikai.test.styleview.LoginStyle;
 import com.guikai.test.broadcast.outline.LoginActivity;
 import com.guikai.test.datasave.FileSave;
@@ -42,6 +43,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
     Button btn_tablayout;
     Button btn_mydialog;
     Button btn_database;
+    Button btn_permission;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -62,6 +64,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
         btn_tablayout = findViewById(R.id.btn_tablayout);
         btn_mydialog = findViewById(R.id.btn_mydialog);
         btn_database = findViewById(R.id.database);
+        btn_permission = findViewById(R.id.btn_permission);
 
         btn_float_widow.setOnClickListener(this);
         btn_guide.setOnClickListener(this);
@@ -78,6 +81,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
         btn_tablayout.setOnClickListener(this);
         btn_mydialog.setOnClickListener(this);
         btn_database.setOnClickListener(this);
+        btn_permission.setOnClickListener(this);
     }
 
     @Override
@@ -137,6 +141,10 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.database:
                 intent = new Intent(this, DataBaseActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_permission:
+                intent = new Intent(this, NewPermissionActivity.class);
                 startActivity(intent);
                 break;
             default:

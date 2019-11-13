@@ -10,6 +10,12 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+
+    <!--摄像头-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.permission.camera"/>
+
 
     <application
         android:allowBackup="true"
@@ -103,6 +109,11 @@
         <activity android:name=".md.tablayout.flyco.FlycoTabActivity"/>
 
         <activity android:name=".datasave.sqlite.DataBaseActivity"/>
+
+<!--        <activity android:name=".permission.AddPermissionActivity" />-->
+
+        <activity android:name=".permission.NewPermissionActivity"
+            />
     </application>
 
 </manifest>

@@ -69,4 +69,6 @@ dependencies {
     implementation 'com.github.1em0nsOft:LemonHello4Android:1.0.1'
     implementation 'com.github.1em0nsOft:LemonBubble4Android:1.0.13'
 
+    implementation 'com.yanzhenjie:permission:2.0.0-rc12'
+
 }
