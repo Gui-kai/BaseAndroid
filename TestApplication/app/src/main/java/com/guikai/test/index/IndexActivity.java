@@ -10,12 +10,11 @@ import android.widget.TextView;
 
 import com.guikai.test.R;
 import com.guikai.test.datasave.sqlite.DataBaseActivity;
-import com.guikai.test.datasave.sqlite.MyDatabase;
 import com.guikai.test.dialog.MyDialogActivity;
 import com.guikai.test.lottie.LottieActivity;
 import com.guikai.test.md.firstcode_demo.MdActivtiy;
 import com.guikai.test.md.tablayout.flyco.FlycoTabActivity;
-import com.guikai.test.permission.NewPermissionActivity;
+import com.guikai.test.permission.AddPermissionActivity;
 import com.guikai.test.styleview.LoginStyle;
 import com.guikai.test.broadcast.outline.LoginActivity;
 import com.guikai.test.datasave.FileSave;
@@ -144,7 +143,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(intent);
                 break;
             case R.id.btn_permission:
-                intent = new Intent(this, NewPermissionActivity.class);
+                intent = new Intent(this, AddPermissionActivity.class);
                 startActivity(intent);
                 break;
             default:

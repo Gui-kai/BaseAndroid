@@ -24,7 +24,7 @@ import java.util.List;
  * Description: 仿淘宝权限
  * Crete by Anding on 2019-11-12
  */
-public class NewPermissionActivity extends AppCompatActivity {
+public class AddPermissionActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -36,8 +36,8 @@ public class NewPermissionActivity extends AppCompatActivity {
         btn_request_camera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (AndPermission.hasPermissions(NewPermissionActivity.this, Manifest.permission.READ_PHONE_NUMBERS)) {
-                    Toast.makeText(NewPermissionActivity.this, "已经通过授权", Toast.LENGTH_SHORT).show();
+                if (AndPermission.hasPermissions(AddPermissionActivity.this, Manifest.permission.READ_PHONE_NUMBERS)) {
+                    Toast.makeText(AddPermissionActivity.this, "已经通过授权", Toast.LENGTH_SHORT).show();
                 } else {
                     ApplyMustPermission();
                 }
@@ -59,17 +59,17 @@ public class NewPermissionActivity extends AppCompatActivity {
                 .onGranted(new Action<List<String>>() {
                     @Override
                     public void onAction(List<String> data) {
-                        Toast.makeText(NewPermissionActivity.this, "已经通过授权", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AddPermissionActivity.this, "已经通过授权", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .onDenied(new Action<List<String>>() {
                     @Override
                     public void onAction(List<String> data) {
-                        if (AndPermission.hasAlwaysDeniedPermission(NewPermissionActivity.this, Manifest.permission.CAMERA)) {
+                        if (AndPermission.hasAlwaysDeniedPermission(AddPermissionActivity.this, Manifest.permission.CAMERA)) {
                             Log.e("", "部分功能被禁止");
-                            showSettingsDialog(NewPermissionActivity.this);
+                            showSettingsDialog(AddPermissionActivity.this);
                         } else {
-                            showCamearDialog(NewPermissionActivity.this);
+                            showCamearDialog(AddPermissionActivity.this);
                         }
                     }
                 })
@@ -115,7 +115,7 @@ public class NewPermissionActivity extends AppCompatActivity {
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                Toast.makeText(NewPermissionActivity.this, "已经取消相机授权", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(AddPermissionActivity.this, "已经取消相机授权", Toast.LENGTH_SHORT).show();
                             }
                         });
 
@@ -131,17 +131,17 @@ public class NewPermissionActivity extends AppCompatActivity {
                 .onGranted(new Action<List<String>>() {
                     @Override
                     public void onAction(List<String> data) {
-                        Toast.makeText(NewPermissionActivity.this, "已经通过授权", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AddPermissionActivity.this, "已经通过授权", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .onDenied(new Action<List<String>>() {
                     @Override
                     public void onAction(List<String> data) {
-                        if (AndPermission.hasAlwaysDeniedPermission(NewPermissionActivity.this, Manifest.permission.READ_PHONE_NUMBERS)) {
+                        if (AndPermission.hasAlwaysDeniedPermission(AddPermissionActivity.this, Manifest.permission.READ_PHONE_NUMBERS)) {
                             Log.e("", "部分功能被禁止");
-                            showMustSettingsDialog(NewPermissionActivity.this);
+                            showMustSettingsDialog(AddPermissionActivity.this);
                         } else {
-                            showPhoneDialog(NewPermissionActivity.this);
+                            showPhoneDialog(AddPermissionActivity.this);
                         }
                     }
                 })
@@ -160,13 +160,13 @@ public class NewPermissionActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         //...To-do
-                        getAppDetailSettingIntent(NewPermissionActivity.this, 2);
+                        getAppDetailSettingIntent(AddPermissionActivity.this, 2);
                     }
                 })
                 .setNegativeButton("下次设置", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(NewPermissionActivity.this, "已经取消相机授权", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AddPermissionActivity.this, "已经取消相机授权", Toast.LENGTH_SHORT).show();
                     }
                 });
 
@@ -187,7 +187,7 @@ public class NewPermissionActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         //...To-do
-                        getAppDetailSettingIntent(NewPermissionActivity.this, 1);
+                        getAppDetailSettingIntent(AddPermissionActivity.this, 1);
                     }
                 });
 
@@ -207,17 +207,17 @@ public class NewPermissionActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 1) {
             if (AndPermission.hasPermissions(this, Manifest.permission.READ_PHONE_NUMBERS)) {
-                Toast.makeText(NewPermissionActivity.this, "您已授权操作！", Toast.LENGTH_SHORT).show();
+                Toast.makeText(AddPermissionActivity.this, "您已授权操作！", Toast.LENGTH_SHORT).show();
 
             } else {
-                showMustSettingsDialog(NewPermissionActivity.this);
+                showMustSettingsDialog(AddPermissionActivity.this);
             }
         } else if (requestCode == 2) {
             if (AndPermission.hasPermissions(this, Manifest.permission.CAMERA)) {
-                Toast.makeText(NewPermissionActivity.this, "您已授权操作！", Toast.LENGTH_SHORT).show();
+                Toast.makeText(AddPermissionActivity.this, "您已授权操作！", Toast.LENGTH_SHORT).show();
 
             } else {
-                Toast.makeText(NewPermissionActivity.this, "相机权限未授权通过！", Toast.LENGTH_SHORT).show();
+                Toast.makeText(AddPermissionActivity.this, "相机权限未授权通过！", Toast.LENGTH_SHORT).show();
             }
         }
     }

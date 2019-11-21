@@ -112,7 +112,7 @@
 
 <!--        <activity android:name=".permission.AddPermissionActivity" />-->
 
-        <activity android:name=".permission.NewPermissionActivity"
+        <activity android:name=".permission.AddPermissionActivity"
             />
     </application>
 
