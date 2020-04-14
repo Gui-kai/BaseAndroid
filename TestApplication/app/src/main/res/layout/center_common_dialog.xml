@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingBottom="30dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@android:id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:includeFontPadding="false"
+        android:paddingStart="25dp"
+        android:paddingLeft="25dp"
+        android:paddingEnd="25dp"
+        android:paddingRight="25dp"
+        android:textColor="#161D3F"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="这是标题" />
+
+    <TextView
+        android:id="@android:id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:textColor="#161D3F"
+        android:lineSpacingExtra="10dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@android:id/title"
+        tools:text="这是内容这是内容这是内容这是内容这是内容这是内容这是内容" />
+
+
+    <Button
+        android:id="@android:id/button1"
+        android:layout_width="240dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="38dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@android:id/message"
+        android:background="@drawable/button_blue_local"
+        android:text="我知道了"
+        android:stateListAnimator="@null"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

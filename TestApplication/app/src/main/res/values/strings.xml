@@ -2,4 +2,20 @@
     <string name="app_name">TestApplication</string>
     <string name="update_content_info">1.更新内容；\n2.更新内容啦；\n3.更新内容，赶紧查看；\n1.更新内容；\n2.更新内容啦；\n3.更新内容，赶紧查看；1.更新内容；\n2.更新内容啦；\n3.更新内容，赶紧查看；1.更新内容；\n2.更新内容啦；\n3.更新内容，赶紧查看；</string>
     <string name="update_content_info1">1.更新内容更新内容；\n2.更新内容啦更新内容；\n3.更新内容，赶紧查看更新内容；\n1.更新内容；\n2.更新内容啦；\n3.更新内容更新内容，赶紧查看；1.更新内更新内容容；\n2.更新更新内容内容啦；\n3.更新内容，赶紧查更新内容看；1.更新更新内容内容；\n2.更新内容啦；\n3.更新内容，赶紧查看；</string>
+    <string name="declare_title">用户协议及隐私政策</string>
+    <string name="declare_message">欢迎使用本APP，在您使用某些特定功能时会读取您的设备信息和存储。\n我们非常重视您的隐私保护和个人信息保护。请您认真阅读上述相关信息以及《隐私政策》和《服务协议》。\n如您阅读完毕并同意以上协议的全部内容，请开始使用我们的产品和服务。</string>
+    <string name="use_agreement">服务协议</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="declare_agree">同意</string>
+    <string name="exit">拒绝并退出</string>
+
+    <string name="permission_settings_title">权限设置</string>
+    <string name="permission_settings_message">在手机系统设置中，打开分身有术Pro“创建桌面快捷方式”权限，否则可能无法添加至桌面</string>
+    <string name="permission_autorun_tips">为确保您的分身应用能正常启动，请进入分身有术Pro应用信息，开启“允许自动启动”权限。</string>
+    <string name="go_settings">去设置</string>
+    <string name="ignore">忽略</string>
+
+    <string name="know">我知道了</string>
+
+
 </resources>

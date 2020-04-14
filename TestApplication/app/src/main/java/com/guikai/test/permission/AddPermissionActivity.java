@@ -39,6 +39,7 @@ public class AddPermissionActivity extends AppCompatActivity {
                 if (AndPermission.hasPermissions(AddPermissionActivity.this, Manifest.permission.READ_PHONE_NUMBERS)) {
                     Toast.makeText(AddPermissionActivity.this, "已经通过授权", Toast.LENGTH_SHORT).show();
                 } else {
+
                     ApplyMustPermission();
                 }
             }

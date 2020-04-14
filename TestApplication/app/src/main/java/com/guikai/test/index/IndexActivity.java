@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.guikai.test.R;
 import com.guikai.test.datasave.sqlite.DataBaseActivity;
-import com.guikai.test.dialog.MyDialogActivity;
+import com.guikai.test.dialog.DialogActivity;
 import com.guikai.test.lottie.LottieActivity;
 import com.guikai.test.md.firstcode_demo.MdActivtiy;
 import com.guikai.test.md.tablayout.flyco.FlycoTabActivity;
@@ -135,7 +135,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(intent);
                 break;
             case R.id.btn_mydialog:
-                intent = new Intent(this, MyDialogActivity.class);
+                intent = new Intent(this, DialogActivity.class);
                 startActivity(intent);
                 break;
             case R.id.database:

@@ -1,4 +1,4 @@
-package com.guikai.test.dialog;
+package com.guikai.test.dialog.lemonsoft;
 
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -19,14 +19,13 @@ import net.lemonsoft.lemonhello.LemonHelloAction;
 import net.lemonsoft.lemonhello.LemonHelloGlobal;
 import net.lemonsoft.lemonhello.LemonHelloInfo;
 import net.lemonsoft.lemonhello.LemonHelloView;
-import net.lemonsoft.lemonhello.adapter.LemonHelloEventDelegateAdapter;
 import net.lemonsoft.lemonhello.interfaces.LemonHelloActionDelegate;
 
 /**
  * Description:
  * Crete by Anding on 2019-10-28
  */
-public class MyDialogActivity extends AppCompatActivity {
+public class LemoDialogActivity extends AppCompatActivity {
 
     private LinearLayout btn_success;
     private LinearLayout btn_error;
@@ -38,7 +37,7 @@ public class MyDialogActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dialog);
+        setContentView(R.layout.fragment_lemon);
 
         LemonHelloGlobal.statusBarColor = Color.parseColor("#3399FF");
         LemonBubbleGlobal.statusBarColor = Color.parseColor("#3399FF");
@@ -89,7 +88,7 @@ public class MyDialogActivity extends AppCompatActivity {
                                 helloView.hide();
                             }
                         }))
-                        .show(MyDialogActivity.this);
+                        .show(LemoDialogActivity.this);
             }
         });
 
@@ -103,7 +102,7 @@ public class MyDialogActivity extends AppCompatActivity {
                                 helloView.hide();
                             }
                         }))
-                        .show(MyDialogActivity.this);
+                        .show(LemoDialogActivity.this);
             }
         });
 
@@ -123,16 +122,16 @@ public class MyDialogActivity extends AppCompatActivity {
                                 helloView.hide();
 
                                 // 提示框使用了LemonBubble，请您参考：https://github.com/1em0nsOft/LemonBubble4Android
-                                LemonBubble.showRoundProgress(MyDialogActivity.this, "正在删除中...");
+                                LemonBubble.showRoundProgress(LemoDialogActivity.this, "正在删除中...");
                                 new Handler().postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
-                                        LemonBubble.showRight(MyDialogActivity.this, "删除成功", 1000);
+                                        LemonBubble.showRight(LemoDialogActivity.this, "删除成功", 1000);
                                     }
                                 }, 2000);
                             }
                         }))
-                        .show(MyDialogActivity.this);
+                        .show(LemoDialogActivity.this);
             }
         });
 
@@ -157,16 +156,16 @@ public class MyDialogActivity extends AppCompatActivity {
                                         .setBubbleSize(200, 50)
                                         .setProportionOfDeviation(0.1f)
                                         .setTitle("正在请求服务器...")
-                                        .show(MyDialogActivity.this);
+                                        .show(LemoDialogActivity.this);
                                 new Handler().postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
-                                        LemonBubble.showRight(MyDialogActivity.this, "注销成功，欢迎您下次登录", 2000);
+                                        LemonBubble.showRight(LemoDialogActivity.this, "注销成功，欢迎您下次登录", 2000);
                                     }
                                 }, 1500);
                             }
                         }))
-                        .show(MyDialogActivity.this);
+                        .show(LemoDialogActivity.this);
             }
         });
         btn_bookmark.setOnClickListener(new View.OnClickListener() {
@@ -192,10 +191,10 @@ public class MyDialogActivity extends AppCompatActivity {
                             @Override
                             public void onClick(LemonHelloView helloView, LemonHelloInfo helloInfo, LemonHelloAction helloAction) {
                                 helloView.hide();
-                                LemonBubble.showRight(MyDialogActivity.this, "添加成功", 1500);
+                                LemonBubble.showRight(LemoDialogActivity.this, "添加成功", 1500);
                             }
                         }));
-                bookMarkInfo.show(MyDialogActivity.this);
+                bookMarkInfo.show(LemoDialogActivity.this);
             }
         });
 
@@ -247,9 +246,9 @@ public class MyDialogActivity extends AppCompatActivity {
                                 helloView.hide();
                             }
                         }));
-                info1.show(MyDialogActivity.this);
-                info2.show(MyDialogActivity.this);
-                info3.show(MyDialogActivity.this);
+                info1.show(LemoDialogActivity.this);
+                info2.show(LemoDialogActivity.this);
+                info3.show(LemoDialogActivity.this);
             }
         });
 

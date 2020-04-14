@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@android:id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:includeFontPadding="false"
+        android:paddingStart="25dp"
+        android:paddingLeft="25dp"
+        android:paddingEnd="25dp"
+        android:paddingRight="25dp"
+        android:textColor="#101010"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="这是标题" />
+
+    <TextView
+        android:id="@android:id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:paddingStart="25dp"
+        android:paddingLeft="25dp"
+        android:paddingEnd="25dp"
+        android:paddingRight="25dp"
+        android:textColor="#101010"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@android:id/title"
+        tools:text="这是内容这是内容这是内容这是内容这是内容这是内容这是内容" />
+
+    <View
+        android:id="@+id/divider_bottom"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/def_divider_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@android:id/message" />
+
+    <Button
+        android:id="@android:id/button1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg1"
+        android:includeFontPadding="false"
+        android:text="@android:string/cancel"
+        android:textColor="@color/btn_text_common_color"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/divider_vertical"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_bottom"
+        tools:text="@android:string/cancel" />
+
+    <View
+        android:id="@+id/divider_vertical"
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:background="@drawable/def_divider_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@android:id/button3"
+        app:layout_constraintStart_toEndOf="@android:id/button1"
+        app:layout_constraintTop_toBottomOf="@id/divider_bottom" />
+
+    <Button
+        android:id="@android:id/button3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg1"
+        android:includeFontPadding="false"
+        android:text="ok"
+        android:textColor="@color/btn_text_common_color"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/divider_vertical"
+        app:layout_constraintTop_toBottomOf="@id/divider_bottom"
+        tools:text="@android:string/yes" />
+
+</android.support.constraint.ConstraintLayout>

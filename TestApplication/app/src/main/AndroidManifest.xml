@@ -33,7 +33,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".dialog.MyDialogActivity"/>
+        <activity android:name=".dialog.lemonsoft.LemoDialogActivity"/>
 
         <activity android:name=".helloworld.HelloWorld"/>
 
@@ -114,6 +114,8 @@
 
         <activity android:name=".permission.AddPermissionActivity"
             />
+        <activity android:name=".dialog.DialogActivity" />
+        <activity android:name=".dialog.mydialog.MyDialogActivity" />
     </application>
 
 </manifest>
