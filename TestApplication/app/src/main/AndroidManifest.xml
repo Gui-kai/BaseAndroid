@@ -10,11 +10,11 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
-    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
 
     <!--摄像头-->
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-feature android:name="android.permission.camera"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.permission.camera" />
 
 
     <application
@@ -33,67 +33,69 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".dialog.lemonsoft.LemoDialogActivity"/>
+        <activity android:name=".dialog.lemonsoft.LemoDialogActivity" />
 
-        <activity android:name=".helloworld.HelloWorld"/>
+        <activity android:name=".helloworld.HelloWorld" />
 
         <activity
             android:name=".utils.FullActivity"
-            android:theme="@style/ActivityFullscreen">
-        </activity>
+            android:theme="@style/ActivityFullscreen"></activity>
 
-        <activity android:name=".utils.HideActionBar"/>
+        <activity android:name=".utils.HideActionBar" />
 
         <activity
             android:name=".guidepage.GuideActivity"
-            android:theme="@style/ActivityFullscreen"/>
+            android:theme="@style/ActivityFullscreen" />
 
-        <activity android:name=".sliding_tab_layout.MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".sliding_tab_layout.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
         <activity android:name=".widgets.Spinner" />
 
-        <activity android:name=".widgets.ViewPager"/>
+        <activity android:name=".widgets.ViewPager" />
 
-        <activity android:name=".styleview.LoginStyle"/>
+        <activity android:name=".styleview.LoginStyle" />
 
-        <activity android:name=".datasave.FileSave"/>
+        <activity android:name=".datasave.FileSave" />
 
-        <activity android:name=".updatedialog.UpdateApk"/>
+        <activity android:name=".updatedialog.UpdateApk" />
 
-        <activity android:name=".floatwindow.FloatWindow"/>
+        <activity android:name=".floatwindow.FloatWindow" />
 
-        <service android:name=".floatwindow.FloatingButtonService"/>
+        <service android:name=".floatwindow.FloatingButtonService" />
 
-        <service android:name=".floatwindow.FloatingImageDisplayService"/>
+        <service android:name=".floatwindow.FloatingImageDisplayService" />
 
-        <service android:name=".floatwindow.FloatingVideoService"/>
+        <service android:name=".floatwindow.FloatingVideoService" />
 
         <activity android:name=".index.TestActivity">
             <intent-filter>
-                <action android:name="guikai"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="guikai" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".vlayout.VLayoutActivity"/>
+        <activity android:name=".vlayout.VLayoutActivity" />
 
-        <receiver android:name=".broadcast.MyBroadCastReceiver"/>
+        <receiver android:name=".broadcast.MyBroadCastReceiver" />
 
-        <activity android:name=".broadcast.BroadActivity"/>
+        <activity android:name=".broadcast.BroadActivity" />
 
-        <activity android:name=".broadcast.LocalActivity"/>
+        <activity android:name=".broadcast.LocalActivity" />
 
-        <activity android:name=".broadcast.outline.LoginActivity"/>
+        <activity android:name=".broadcast.outline.LoginActivity" />
 
-        <activity android:name=".broadcast.outline.MainActivity"/>
+        <activity android:name=".broadcast.outline.MainActivity" />
 
-        <activity android:name=".md.firstcode_demo.MdActivtiy"
+        <activity
+            android:name=".md.firstcode_demo.MdActivtiy"
             android:theme="@style/ActivityTheme">
 
         </activity>
 
-        <activity android:name=".md.firstcode_demo.AppbarLayoutActivity"
+        <activity
+            android:name=".md.firstcode_demo.AppbarLayoutActivity"
             android:theme="@style/NoStatus">
 
         </activity>
@@ -102,20 +104,48 @@
 
         </activity>
 
-        <activity android:name=".lottie.LottieActivity"/>
+        <activity android:name=".lottie.LottieActivity" />
 
-        <activity android:name=".md.tablayout.TabLayoutDemo"/>
+        <activity android:name=".md.tablayout.TabLayoutDemo" />
 
-        <activity android:name=".md.tablayout.flyco.FlycoTabActivity"/>
+        <activity android:name=".md.tablayout.flyco.FlycoTabActivity" />
 
-        <activity android:name=".datasave.sqlite.DataBaseActivity"/>
+        <activity android:name=".datasave.sqlite.DataBaseActivity" />
 
-<!--        <activity android:name=".permission.AddPermissionActivity" />-->
+        <!--        <activity android:name=".permission.AddPermissionActivity" />-->
 
-        <activity android:name=".permission.AddPermissionActivity"
-            />
+        <activity android:name=".permission.AddPermissionActivity" />
         <activity android:name=".dialog.DialogActivity" />
         <activity android:name=".dialog.mydialog.MyDialogActivity" />
+
+
+        <!-- 辅助模式demo-->
+        <activity android:name=".accessibility.AccessibilityMainActivity" />
+        <activity
+            android:name=".accessibility.AccessibilityOpenHelperActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:process=":BackgroundService"
+            android:taskAffinity="com.open.helper"
+            android:theme="@style/Accessibility.Transparent.Activity" />
+
+        <activity android:name=".accessibility.AccessibilityNormalSampleActivity"
+            android:process=":BackgroundService"/>
+        <service
+            android:name=".accessibility.AccessibilitySampleService"
+            android:exported="true"
+            android:label="@string/accessibility_tip"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:process=":BackgroundService">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_config" />
+        </service>
+        <!-- 辅助模式demo-->
+
     </application>
 
 </manifest>

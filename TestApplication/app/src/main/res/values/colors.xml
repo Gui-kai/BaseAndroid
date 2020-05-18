@@ -28,4 +28,7 @@
     <color name="color_454545">#454545</color>
     <color name="light_gray">#dbdbdb</color>
     <color name="color_03DD7F">#03DD7F</color>
+
+    <color name="accessibility_transparent">#00000000</color>
+
 </resources>

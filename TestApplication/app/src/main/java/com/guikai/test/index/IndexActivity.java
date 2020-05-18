@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.guikai.test.R;
+import com.guikai.test.accessibility.AccessibilityMainActivity;
 import com.guikai.test.datasave.sqlite.DataBaseActivity;
 import com.guikai.test.dialog.DialogActivity;
 import com.guikai.test.lottie.LottieActivity;
@@ -43,6 +44,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
     Button btn_mydialog;
     Button btn_database;
     Button btn_permission;
+    Button btn_accessbility;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -64,6 +66,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
         btn_mydialog = findViewById(R.id.btn_mydialog);
         btn_database = findViewById(R.id.database);
         btn_permission = findViewById(R.id.btn_permission);
+        btn_accessbility = findViewById(R.id.btn_accessibility);
 
         btn_float_widow.setOnClickListener(this);
         btn_guide.setOnClickListener(this);
@@ -81,6 +84,7 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
         btn_mydialog.setOnClickListener(this);
         btn_database.setOnClickListener(this);
         btn_permission.setOnClickListener(this);
+        btn_accessbility.setOnClickListener(this);
     }
 
     @Override
@@ -144,6 +148,10 @@ public class IndexActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.btn_permission:
                 intent = new Intent(this, AddPermissionActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_accessibility:
+                intent = new Intent(this, AccessibilityMainActivity.class);
                 startActivity(intent);
                 break;
             default:
