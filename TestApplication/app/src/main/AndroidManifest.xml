@@ -120,19 +120,19 @@
 
 
         <!-- 辅助模式demo-->
-        <activity android:name=".accessibility.AccessibilityMainActivity" />
+        <activity android:name=".accessibility.demo.AccessibilityMainActivity" />
         <activity
-            android:name=".accessibility.AccessibilityOpenHelperActivity"
+            android:name=".accessibility.demo.AccessibilityOpenHelperActivity"
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
             android:process=":BackgroundService"
             android:taskAffinity="com.open.helper"
             android:theme="@style/Accessibility.Transparent.Activity" />
 
-        <activity android:name=".accessibility.AccessibilityNormalSampleActivity"
+        <activity android:name=".accessibility.demo.AccessibilityNormalSampleActivity"
             android:process=":BackgroundService"/>
         <service
-            android:name=".accessibility.AccessibilitySampleService"
+            android:name=".accessibility.demo.AccessibilitySampleService"
             android:exported="true"
             android:label="@string/accessibility_tip"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"

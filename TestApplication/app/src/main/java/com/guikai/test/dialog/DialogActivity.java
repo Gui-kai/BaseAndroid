@@ -144,5 +144,4 @@ public class DialogActivity extends AppCompatActivity {
         animator.start();
     }
 
-
 }

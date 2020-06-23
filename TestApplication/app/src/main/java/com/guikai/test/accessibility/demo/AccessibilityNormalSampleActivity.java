@@ -1,4 +1,4 @@
-package com.guikai.test.accessibility;
+package com.guikai.test.accessibility.demo;
 
 import android.os.Bundle;
 import android.os.Handler;

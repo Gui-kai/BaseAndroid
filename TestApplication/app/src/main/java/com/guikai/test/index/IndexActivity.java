@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.guikai.test.R;
-import com.guikai.test.accessibility.AccessibilityMainActivity;
+import com.guikai.test.accessibility.demo.AccessibilityMainActivity;
 import com.guikai.test.datasave.sqlite.DataBaseActivity;
 import com.guikai.test.dialog.DialogActivity;
 import com.guikai.test.lottie.LottieActivity;

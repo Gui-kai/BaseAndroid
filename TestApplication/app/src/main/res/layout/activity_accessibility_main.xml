@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/dp_16"
     android:paddingTop="@dimen/dp_16"
     android:orientation="vertical"
-    tools:context=".accessibility.AccessibilityMainActivity">
+    tools:context=".accessibility.demo.AccessibilityMainActivity">
 
     <Button
         android:id="@+id/open_accessibility_setting"
